@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dalhousie University UNICEF Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">UNICEF Club <br> Dalhousie University
+                </td>
+                <td id="navigation">
+                    <a href="#work">Events</a>
+                    <a href="#bio">About</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>We are here for the children around the world.</h1>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkXJ9AE62qzCRh8bmaEfOv-zeYnQ-ck41BR2vcwDH-8ZasLA/viewform">
+                    <button class="btn_one">Join Us</button>
+                </a>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                        <a href="https://www.instagram.com/unicefdal/" class="social"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/dalhousie-unicef/mycompany/verification/" class="social"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/DalhousieUNICEF" class="social"><i class="fab fa-twitter"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Events</h1>
+        <div id="photos">
+            <a href="https://www.instagram.com/reel/Cxo8soGtnxR/?utm_source=ig_web_button_share_sheet&igshid=MzRlODBiNWFlZA==" target="_blank">
+                <img onclick="magnify($(this).attr('src'))" src="Posters/1.png">
+            </a>
+            <img onclick="magnify($(this).attr('src'))" src="Posters/DALHOUSIE UnICEF CLUB (1).png">
+            <img onclick="magnify($(this).attr('src'))" src="Posters/DALHOUSIE UnICEF CLUB (3).png">
+            <img onclick="magnify($(this).attr('src'))" src="Posters/IG STORY.png">
+            <img onclick="magnify($(this).attr('src'))" src="Posters/POSTER.png">
+            <img onclick="magnify($(this).attr('src'))" src="Posters/Table Poster.png">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>About</h1>
+        <p>
+            DAL UNICEF is a university club at Dalhousie University that advocates for UNICEF's mission of supporting children's rights worldwide. 
+        </p>
+        <p>
+            The club raises awareness and organizes events to promote quality education, healthcare, and protection for children, aligning with UNICEF's goals. 
+            Through fundraisers, campaigns, and partnerships, DAL UNICEF empowers students to make a positive impact and contribute to a better future for children globally.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 902-292-3585</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; unicef@dal.ca</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        6136 University Ave,<br>
+                                        Halifax, Nova Scotia<br>
+                                        B3H 4R2, Canada
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            <a href="https://www.instagram.com/unicefdal/" class="social"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/company/dalhousie-unicef/mycompany/verification/" class="social"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://twitter.com/DalhousieUNICEF" class="social"><i class="fab fa-twitter"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text">Message Us</div>
+                        <form action="https://formsubmit.co/eyafee.alhossain@dal.ca" method="POST">
+                            <input type="hidden" name="_subject" value="New message from your website form!">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="email" required>
+                                </div>
+                            </div>
+                            <div class="field textarea">
+                                <textarea placeholder="your message" required rows="5"></textarea>
+                            </div>
+                            <div class="button-area">
+                                <button class="btn_one">send</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
